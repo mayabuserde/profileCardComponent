@@ -16,8 +16,8 @@ body {
     url(images/bg-pattern-top.svg), 
     url(images/bg-pattern-bottom.svg);
     background-position: 
-    top -450px left -50px,
-    bottom -450px right -50px;
+    top -550px left -200px,
+    bottom -550px right -200px;
     background-repeat: no-repeat;
 
     /* typography */
@@ -34,8 +34,8 @@ article {
     justify-content: space-between;
     flex-direction: column;
 
-    height: 40%;
-    width: 18%;
+    height: 370px;
+    width: 320px;
     margin: auto;
     border-radius: 15px;
     box-shadow: 0 1px 50px -10px hsl(229, 23%, 23%);
@@ -112,5 +112,19 @@ img {
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 1.5px;
+    
+}
+
+/* || media queries for mobile/desktop versions */
+/* can leave width of card fixed, but need to adjust the background image locations */
+
+@media (max-width: 377px) {
+
+    body {
+        background-position: 
+    top -600px left -750px,
+    bottom -600px right -750px;
+    
+    }
     
 }
